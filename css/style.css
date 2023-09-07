@@ -1,0 +1,190 @@
+/* normalize css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* main css */
+body {
+  background-image: url('marvelImg.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* navigation css start here */
+nav {
+  background-color: #050A30;
+  position: fixed;
+}
+
+/* title */
+.super {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+}
+
+/* search bar container start here */
+.search-box {
+  margin-top: -65px;
+  margin-left: 40%;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+/* search bar text  */
+.search {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  margin-top: 4%;
+  margin-left: 32%;
+}
+
+/* search input box */
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 40px;
+  color: #fff;
+}
+
+/* placeholder css */
+.input-search::placeholder {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-size: larger;
+}
+
+/* search icon button css */
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+/* navigation css end here */
+
+/* container css start here */
+.resultContainer {
+  height: 80%;
+  width: 80%;
+}
+
+/* card css start here */
+.superhero {
+  width: 25rem;
+  background-color: rgb(243, 58, 106, 0.9);
+  margin-top: 5%;
+  margin-left: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* side 1 css */
+.left {
+  width: 100%;
+}
+
+/* card image */
+.superhero img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* side 2 css */
+.right {
+  width: 100%;
+  margin-left: 10px;
+  text-align: center;
+}
+
+/* card header */
+.name {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  color: white;
+  margin-left: -9%;
+  font-family: sans-serif;
+}
+
+/* header text */
+.name h2 {
+  color: white;
+  font-family: sans-serif;
+  margin-left: 10%;
+  width: 100%;
+}
+
+/* go to single page link text css */
+.info {
+  font-family: cursive;
+  color: white;
+  margin-top: 15%;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+/* on click add to favourite button */
+.fa-heart {
+  position: absolute;
+  right: 50px;
+  top: 15px;
+}
+
+/* added to favourite */
+.red {
+  color: red
+}
+
+/* not added to favourite */
+.white {
+  color: white;
+}
+
+/* on hover */
+.white:hover {
+  color: #FF0000;
+}
+
+/* card css end here */
+
+/* container css end here */
